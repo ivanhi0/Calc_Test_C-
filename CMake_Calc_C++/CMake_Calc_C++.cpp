@@ -8,7 +8,7 @@ int main()
     setlocale(LC_ALL, "ru");
     bool Run = true;
     while (Run) {
-        int choice = 0;
+        int choice;
         long double a = 0;
         long double b = 0;
         long double gdz = 0;
