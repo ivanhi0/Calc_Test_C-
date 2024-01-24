@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <cmath>
 #include <Windows.h>
 using namespace std;
@@ -8,7 +8,7 @@ int main()
     setlocale(LC_ALL, "ru");
     bool Run = true;
     while (Run) {
-        int choice = 0;
+        char choice;
         long double a = 0;
         long double b = 0;
         long double gdz = 0;
@@ -23,7 +23,7 @@ int main()
         cin >> choice;
         system("cls");
         switch (choice) {
-        case 1:
+        case '1':
             cout << "Давай 2 числа для сложения\n";
             cout << "Первое число: ";
             cin >> a;
@@ -33,7 +33,7 @@ int main()
             system("pause");
             system("cls");
             break;
-        case 2:
+        case '2':
             cout << "Давай 2 числа для вычитания\n";
             cout << "Первое число: ";
             cin >> a;
@@ -43,7 +43,7 @@ int main()
             system("pause");
             system("cls");
             break;
-        case 3:
+        case '3':
             cout << "Вы выбрали 3\n";
             cout << "Первое число: ";
             cin >> a;
@@ -53,7 +53,7 @@ int main()
             system("pause");
             system("cls");
             break;
-        case 4:
+        case '4':
             cout << "2 числа для деления\n";
             cout << "Первое число: ";
             cin >> a;
@@ -71,7 +71,7 @@ int main()
                 system("cls");
             }
             break;
-        case 5:
+        case '5':
             cout << "Сейчас нужно будет ввести 1. Число 2. Степень \n";
             cout << "Первое число: ";
             cin >> a;
@@ -91,11 +91,9 @@ int main()
             }
 
             break;
-        case 6:
+        case '6':
             Run = false;
             break;
-            {case '-':
-                break; }
         default:
             cout << "Других режимов нет :)" << endl;
             system("pause");
